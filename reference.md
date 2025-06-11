@@ -51,3 +51,4 @@ top: [px];
 
 .[class] img {}
 
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;

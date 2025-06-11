@@ -51,3 +51,12 @@ h1:hover {
     /*ease-in*/
     /*ease-out*/
 }
+
+/*The cursor property in CSS controls the appearance of the mouse cursor when it hovers over an element.
+You can use predefined values like pointer, text, wait, etc., or specify a custom image URL.*/
+
+/* how to create custom cursor: https://blog.logrocket.com/custom-cursor-css/
+*/
+
+/* #87CEEB; Sky Blue */
+/* #FF6347; Tomato */
