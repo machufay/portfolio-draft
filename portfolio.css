@@ -1,5 +1,5 @@
 body {
-    background-color: #87CEEB;
+    background-color: #ffffff;
     display:block;
 }
 
@@ -21,15 +21,25 @@ body {
     height: 200vh;
 }
 .matthew-fei {
+    position: absolute;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-.matthew-fei:hover{
+.circle-of-dots {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, black 2px, transparent 2px);
+  background-size: 20px 20px; /* Adjust spacing between dots */
+  background-position: center;
+}
+
+/*.matthew-fei:hover{
   animation-name: stretch;
             animation-duration: 2.0s;
             animation-timing-function: ease-in-out;
@@ -49,4 +59,4 @@ body {
                 transform: rotateY(360deg);
             }
         } 
-
+*/
