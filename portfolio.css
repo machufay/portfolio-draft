@@ -1,9 +1,9 @@
 body {
-    background-image: linear-gradient(90deg, #eecf44, #b18c29);
+    background-color: #87CEEB;
     display:block;
 }
 
-.viewport{
+/*.viewport{
     margin-top: 20vh;
     width:50vw;
     height:50vh;
@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: circle(15vw at center)
-}
+}*/
 
 .this-is-just-for-scrolling {
     height: 200vh;
@@ -27,12 +27,6 @@ body {
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 20px;
-}
-.matthew-fei:hover {
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px #000000;
-    transform: scale(1.1);
-    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .matthew-fei:hover{
