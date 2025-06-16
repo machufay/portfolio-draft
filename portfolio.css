@@ -44,7 +44,7 @@ body {
     rotateX(10deg); /*tilts each item*/
 }
 .banner .slider:hover{
-    animation: spin 10s linear infinite;
+    animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
