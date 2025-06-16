@@ -20,20 +20,28 @@ body {
     position: absolute;
     width: 15vw;
     height: 15vw;
-    top: 10%;
+    top: 20vw;
     left: calc(50% - 7.5vw); /* centers the circle */
     transform-style: preserve-3d; /* so children of element (aka items) are positioned in 3d space regardless of the parent element's orientation*/
-    transform: perspective(100vw); /*sets viewer that much away from z=0*/
+    transform: 
+    perspective(100vw) /*sets viewer that much away from z=0*/
+    rotateX(-16deg) /*tilts the circle*/
+    rotateY(var(--orientationY)); 
 }
+    :root {
+        --orientationY: 0deg;
+    }
 
 .banner .slider .item{
     position: absolute;
+    width: 15vw;
+    height: 15vw;
     inset: 0 0 0 0; /*shortcut for using "top:" "right:" "bottom:" "left:"*/
     transform: 
-    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    rotateY(calc( var(--position) * (360 / var(--quantity)) * 1deg))
     /*^^^formula for equa lspacing^^^*/
     translateZ(30vw)/*sets the radius of the circle*/
-    rotateX(0deg); /*tilts each item*/
+    rotateX(10deg); /*tilts each item*/
 }
 .banner .slider:hover{
     animation: spin 10s linear infinite;
@@ -41,10 +49,10 @@ body {
 
 @keyframes spin {
     from {
-        transform: perspective(100vw) rotateX(-18deg) rotateY(0deg); 
+        transform: perspective(100vw) rotateX(-16deg) rotateY(0deg); 
         /* still need to add perspective here otherwise it goes flat when it spins*/
     } to {
-        transform: perspective(100vw) rotateX(-18deg) rotateY(360deg);
+        transform: perspective(100vw) rotateX(-16deg) rotateY(360deg);
     }
 }
 
