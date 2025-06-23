@@ -1,48 +1,79 @@
+*{
+    margin:0px;
+}
+
+
+
+
 body {
     /* background-image: url("grid\ again.png");
     background-size: contain; */
+    margin:0px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #e7e7e7;
     min-height: 100vh;
     line-height:1.5;
+    text-align: center;
+}
+.front-page {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(0deg, #819A91, #537D5D); /*#72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
+    position: fixed;
+    width:100vw;
+    min-height: 100vh;
+    line-height:1.5;
+    text-align: center;
+}
+.title {
+    top: 10px !important;
+    color: #FBFFE4;
+    font-weight:1000;
+    font-size: 3rem;
+    text-shadow: -4px 4px #000000, 
+    -2.5px -2.5px #2c3633, 
+    2.5px -2.5px #2c3633, 
+    2.5px 2.5px #2c3633; /*h-shadow v-shadow blur-radius color;*/
 
 }
-
 .banner {
     width: 100%;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
-    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .banner .slider {
     position: absolute;
-    width: 15vw;
+    width: 16.6vw;
     height: 15vw;
-    top: 20vw;
-    left: calc(50% - 7.5vw); /* centers the circle */
+    top: 15vw;
+    left: calc(50% - 8.3vw); /* centers the circle */
     transform-style: preserve-3d; /* so children of element (aka items) are positioned in 3d space regardless of the parent element's orientation*/
     transform: 
     rotateY(0deg)
     perspective(100vw) /*sets viewer that much away from z=0*/
-    rotateX(-16deg); /*tilts the circle*/
+    rotateX(0deg); /*tilts the circle*/
 }
 
 .name {
-    transform: rotateY(45deg);
+    transform: rotateY(0deg);
+    color: beige;
+    inset: 0 0 100 0;
 }
+
 .banner .slider .item{
+    background-color: #FBFFE4;
+    border: 1.9px solid #000000 !important;
     position: absolute;
-    overflow: hidden;
-    width: 15vw;
+    width: 16.6vw;
     height: 15vw;
     border-radius: 0%;
     inset: 0 0 0 0; /*shortcut for using "top:" "right:" "bottom:" "left:"*/
     transform: 
     rotateY(calc( var(--position) * (360 / var(--quantity)) * 1deg))
     /*^^^formula for equa lspacing^^^*/
-    translateZ(30vw)/*sets the radius of the circle*/
+    translateZ(20vw)/*sets the radius of the circle*/
     rotateX(0deg); /*tilts each item*/
 }
 
@@ -65,8 +96,25 @@ body {
     
     object-fit: cover; /*image fills entire container and cuts off the rest*/
 }
-    
 
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 70vh;
+}
+.slider-left {
+    padding: 20px;
+    height: 50px;
+    border-color: black;
+    border-width: 2px;
+    margin-right: 1vw;
+}
+.slider-right {
+    padding: 20px;
+    height: 50px;
+    border-color: black;
+    border-width: 2px;
+}
 
 
 
