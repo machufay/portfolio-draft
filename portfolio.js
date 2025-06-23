@@ -26,7 +26,7 @@ const item8 = document.getElementById("item8");
    //if right button pressed
    sliderRight.addEventListener("click", function () {
       
-      slider.animate(transformations, timingOptions); //basically keyframes
+      slider.animate(transformationsRight, timingOptionsRight); //basically keyframes
          
       itemAngle.forEach(function(angle, index, arr){
          if (angle >= 360){ 
@@ -49,12 +49,12 @@ const item8 = document.getElementById("item8");
    });
 
    //parameters for animate function
-   var transformations = [
-      { transform: 'perspective(100vw) rotateX(0deg) rotateY(-45deg)' },
-      { transform: 'perspective(100vw) rotateX(0deg) rotateY(0deg)' }
+   var transformationsRight = [
+      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(-45deg)' },
+      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(0deg)' }
    ];
 
-   const timingOptions = {
+   const timingOptionsRight = {
       duration: 700, // mseconds
       iterations: 1, // Repeat
       easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
@@ -87,8 +87,8 @@ const item8 = document.getElementById("item8");
 
    //parameters for animate function
    var transformationsLeft = [
-      { transform: 'perspective(100vw) rotateX(0deg) rotateY(45deg)' },
-      { transform: 'perspective(100vw) rotateX(0deg) rotateY(0deg)' }
+      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(45deg)' },
+      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(0deg)' }
    ];
 
    const timingOptionsLeft = {
