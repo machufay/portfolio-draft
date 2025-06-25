@@ -23,10 +23,10 @@ const item8 = document.getElementById("item8");
    var endAngle = startAngle + 45;
    var position = 0;
    
-   //if right button pressed
-   sliderRight.addEventListener("click", function () {
+   //if left button pressed
+   sliderLeft.addEventListener("click", function () {
       
-      slider.animate(transformationsRight, timingOptionsRight); //basically keyframes
+      slider.animate(transformationsLeft, timingOptionsLeft); //basically keyframes
          
       itemAngle.forEach(function(angle, index, arr){
          if (angle >= 360){ 
@@ -49,21 +49,21 @@ const item8 = document.getElementById("item8");
    });
 
    //parameters for animate function
-   var transformationsRight = [
-      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(-45deg)' },
-      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(0deg)' }
+   var transformationsLeft = [
+      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(-45deg)' },
+      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(0deg)' }
    ];
 
-   const timingOptionsRight = {
+   const timingOptionsLeft = {
       duration: 700, // mseconds
       iterations: 1, // Repeat
       easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
    };
 
-   //if left button pressed
-   sliderLeft.addEventListener("click", function () {
+   //if right button pressed
+   sliderRight.addEventListener("click", function () {
       
-      slider.animate(transformationsLeft, timingOptionsLeft); //basically keyframes
+      slider.animate(transformationsRight, timingOptionsRight); //basically keyframes
          
       itemAngle.forEach(function(angle, index, arr){
          if (angle >= 360){ 
@@ -86,12 +86,12 @@ const item8 = document.getElementById("item8");
    });
 
    //parameters for animate function
-   var transformationsLeft = [
-      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(45deg)' },
-      { transform: 'perspective(100vw) rotateX(-14deg) rotateY(0deg)' }
+   var transformationsRight = [
+      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(45deg)' },
+      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(0deg)' }
    ];
 
-   const timingOptionsLeft = {
+   const timingOptionsRight = {
       duration: 700, // mseconds
       iterations: 1, // Repeat
       easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
