@@ -106,8 +106,7 @@ body {
     transform: 
     rotateY(calc( var(--position) * (360 / var(--quantity)) * 1deg))
     /*^^^formula for equa lspacing^^^*/
-    translateZ(20vw)/*sets the radius of the circle*/
-    rotateX(0deg); /*tilts each item*/
+    translateZ(20vw);/*sets the radius of the circle*/
 }
     .banner .slider .item:hover {
         background-color: #FFCF50;
