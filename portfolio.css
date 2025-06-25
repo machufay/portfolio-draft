@@ -19,7 +19,7 @@ body {
 /*LANDING PAGE CODE*/
 .landing-page {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(180deg,#4a5a4a); /*#3D8D7A, #B3D8A8, #819A91, #537D5D green grad #72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
+    background-image: linear-gradient(180deg,#73946b, #1a4c27); /*#1a2c27, #1a4c27, #3D8D7A, #B3D8A8, #819A91, #537D5D green grad #72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
     position: relative;
     width:100vw;
     height: 200vh;
@@ -41,21 +41,21 @@ body {
     position: relative;
     
     font-size: 9rem;
-    font-weight:1000;
-    color: #FBFFE4;
-    /*background-color: #FBFFE4;*/
+    font-weight:800;
+    color: #ffffff;
     text-shadow: -6px 6px #1a2c27, 
-    -4px -4px #1a2c27, 
-    4px -4px #1a2c27, 
-    4px 4px #1a2c27; /*h-shadow v-shadow blur-radius color;*/
+    -3px -3px #1a2c27, 
+    3px -3px #1a2c27, 
+    3px 3px #1a2c27;
+
 }
 .title::after{
     content: " FEI";
-    color: #4e7c4d;
+    color: #1a2c27;
     text-shadow: -6px 6px #ffffff, 
-    -4px -4px #1a2c27, 
-    4px -4px #1a2c27, 
-    4px 4px #1a2c27;
+    -3px -3px #6d9276, 
+    3px -3px #6d9276, 
+    3px 3px #6d9276;
 }
 .title:hover{
     transform: scale(1.1);
