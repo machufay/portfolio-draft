@@ -176,7 +176,7 @@ body {
 .about-me {
     position: relative;
     width: 100vw;
-    height: 60vw;
+    height: 80vw;
     top: 0vw;
     color:#FBFFE4;
     font-size: 1.7vw;
@@ -185,23 +185,59 @@ body {
     border-top-right-radius: 50vw 30vw; */
 }
     .about-me h1{
-    margin-top: 3vw;
-    text-shadow: -0.3vw 0.3vw #1a2c27, 
-        -0.17vw -0.17vw #1a2c27, 
-        0.17vw -0.17vw #1a2c27, 
-        0.17vw 0.17vw #1a2c27;
-    padding: 1.5vw;
-    background-color: #73946B;
-    width: 20vw;
-    margin-left: 20vw;
-    box-shadow: -0.3vw 0.3vw #15221e;
+        margin-top: 3vw;
+        text-shadow: -0.3vw 0.3vw #1a2c27, 
+            -0.17vw -0.17vw #1a2c27, 
+            0.17vw -0.17vw #1a2c27, 
+            0.17vw 0.17vw #1a2c27;
+        padding: 1.5vw;
+        background-color: #73946B;
+        width: 20vw;
+        margin-left: 20vw;
+        box-shadow: -0.3vw 0.3vw #15221e;
     }
-.about-me-top{
-    width:100vw;
-    height: 5vw;
-    background-color:#73946b;
-    z-index: 2;
-}
+    .about-me h1:hover{
+        transform: scale(1.1);
+        transition: transform 0.2s ease-out;
+    }
+    .about-me-top{
+        width:100vw;
+        height: 6vw;
+        background-color: #73946b;
+        z-index: 2;
+        box-shadow: 0vw 0.2vw #485a46;
+    }
+    .about-me img {
+        width:100vw;
+        position: absolute;
+        left: 0;
+        bottom:0;
+
+    }
+    .sun {
+        position: absolute;
+        background-color: #c0c48d;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 50%;
+        left: 70vw;
+        top: 20vw
+    }
+    .about-me .bulletin{
+        background-color: #7e947c;
+        position: absolute;
+        left: 15vw;
+        top: 20vw;
+    }
+    .about-me .bulletin h3{
+        font-size: 1.9vw;
+        color:#ffffff;
+        text-shadow:
+        -0.1vw -0.1vw #1a2c27, 
+        0.1vw -0.1vw #1a2c27, 
+        -0.1vw 0.1vw #1a2c27,
+        0.1vw 0.1vw #1a2c27;
+    }
 .technical-skills {
     height: 100vh;
     width:100vw;
