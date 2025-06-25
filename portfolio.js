@@ -26,8 +26,10 @@ const item8 = document.getElementById("item8");
    
    //INITIAL AUTO SCROLL
    let auto = "on";
+   console.log(auto);
    title.addEventListener("click", function () {
       auto = "off";
+      console.log(auto);
    });
 
    if (auto === "on"){
@@ -44,8 +46,6 @@ const item8 = document.getElementById("item8");
       easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
       };
 
-   } else{
-      
    };
 
    //if left button pressed

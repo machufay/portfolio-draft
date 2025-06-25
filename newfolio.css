@@ -10,21 +10,29 @@ body {
     min-height: 100vh;
     text-align: center;
     font-weight:1000;
-    text-shadow: -0.2vw 0.2vw #1a2c27, 
-    -0.15vw -0.15vw #1a2c27, 
-    0.15vw -0.15vw #1a2c27, 
-    0.15vw 0.15vw #1a2c27; /*h-shadow v-shadow blur-radius color;*/
+    color:#FBFFE4;
 }
 
 /*LANDING PAGE CODE*/
 .landing-page {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(180deg,#73946b, #1a4c27); /*#1a2c27, #1a4c27, #3D8D7A, #B3D8A8, #819A91, #537D5D green grad #72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
+    background-image: linear-gradient(270deg, #485a46); /*#1a2c27, #1a4c27, #3D8D7A, #B3D8A8, #819A91, #537D5D green grad #72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
     position: relative;
     width:100vw;
-    height: 200vh;
+    height: 110vh;
     text-align: center;
 }
+
+.halfpage {
+    display:block;
+    position: absolute;
+    width: 50vw;
+    left: 0vw;
+    height: 110vh;
+    background-color: #73946b;
+    clip-path: ellipse(97% 100% at 0% 30%);
+}
+
 .green-box {
     display: none;
     z-index:0;
@@ -36,31 +44,47 @@ body {
 
 }
 
-.title {
-    top: 10px;
-    position: relative;
-    margin-bottom: 10vh;
-    font-size: 5rem;
-    font-weight:800;
-    color: #ffffff;
-    text-shadow: -6px 6px #1a2c27, 
-    -3px -3px #1a2c27, 
-    3px -3px #1a2c27, 
-    3px 3px #1a2c27;
+.half-page {
+    width: 45vw;
+    height: 50vh;
+    top: 20vh;
+    left: 5vw;
+    position: absolute;
+    text-align: left;
+}
+    .title {
+        top: 0vh;
+        position: relative;
+        
+        font-size: 4.5rem;
+        font-weight:800;
+        color: #ffffff;
+        text-shadow: -6px 6px #1a2c27, 
+        -3px -3px #1a2c27, 
+        3px -3px #1a2c27, 
+        3px 3px #1a2c27;
+    }
+    .title::after{
+        content: " FEI";
+        color: #ffffff;
+        text-shadow: -6px 6px #1d1f1d, 
+        -3px -3px #1a2c27, 
+        3px -3px #1a2c27, 
+        3px 3px #1a2c27;
+    }
+    .title:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease-out;
+    }
 
-}
-.title::after{
-    content: " FEI";
-    color: #1a2c27;
-    text-shadow: -6px 6px #ffffff, 
-    -3px -3px #6d9276, 
-    3px -3px #6d9276, 
-    3px 3px #6d9276;
-}
-.title:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease-out;
-}
+    .half-page h3, h2{
+        font-size: 1.7rem;
+        color:#ffffff;
+        text-shadow:
+        -1.2px -1.2px #1a2c27, 
+        1.2px -1.2px #1a2c27, 
+        1.2px 1.2px #1a2c27;
+    }
 
 /*LANDING SLIDER CODE*/
 .banner {
@@ -76,8 +100,8 @@ body {
     position: absolute;
     width: 16.4vw;
     height: 12vw;
-    top: 5vw;
-    left: calc(50% - 8.2vw); /* centers the circle */
+    top: 17vw;
+    left: calc(50% - -15vw); /* centers the circle */
     transform-style: preserve-3d; /* so children of element (aka items) are positioned in 3d space regardless of the parent element's orientation*/
     transform: 
     rotateY(0deg)
@@ -94,9 +118,9 @@ body {
 .banner .slider .item{
     background-color: #A4B465;
     color:#FBFFE4;
-    font-size: 3vw;
+    font-size: 2vw;
     vertical-align: middle;
-    border: 2px solid #000000 !important;
+    border: 3px solid #000000 !important;
     text-align: center;
     position: absolute;
     width: 16.4vw;
@@ -107,6 +131,11 @@ body {
     rotateY(calc( var(--position) * (360 / var(--quantity)) * 1deg))
     /*^^^formula for equa lspacing^^^*/
     translateZ(20vw);/*sets the radius of the circle*/
+
+     text-shadow: -0.2vw 0.2vw #1a2c27, 
+    -0.15vw -0.15vw #1a2c27, 
+    0.15vw -0.15vw #1a2c27, 
+    0.15vw 0.15vw #1a2c27; /*h-shadow v-shadow blur-radius color;*/
 }
     .banner .slider .item:hover {
         background-color: #FFCF50;
@@ -124,7 +153,8 @@ body {
     z-index: 1;
     display: block;
     justify-content: center;
-    margin-top: 54vh;
+    margin-top: 79vh;
+    margin-left: 50vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 1000;
 }
@@ -155,32 +185,38 @@ body {
     }
 
 /*DIVIDER CODE*/
-.divider1 {
-    position: absolute;
+.about-me {
+    position: relative;
     width: 100vw;
-    height: 200vh;
-    top:110vh;
+    height: 110vh;
+    top:0vh;
     color:#FBFFE4;
     font-size: 1.5rem;
     background-color: #A4B465;
     /*border-top-left-radius: 50vw 30vw;
     border-top-right-radius: 50vw 30vw; */
 }
-.divider1-top{
+.about-me-top{
     width:100vw;
     height: 10vh;
     /*background-color:#FBFFE4;*/
     z-index: 2;
 }
 
+.technical-skills {
+    height: 100vh;
+    width:100vw;
+    background-color: #FBFFE4;
+    top:0vh;
+}
 
 /*MINI SLIDER CODE*/
 .mini-slider {
     position: absolute;
-    width: 8vw;
+    width: 8.1vw;
     height: 6vw;
-    top: 2vw;
-    left: calc(50% - 4vw); 
+    top: 14vw;
+    left: calc(50% - -19.5vw); 
     transform-style: preserve-3d;
     transform:
     rotateY(0deg)
@@ -194,10 +230,10 @@ body {
     color:#FBFFE4;
     font-size: 1.4vw;
     vertical-align: middle;
-    border: 2px solid #000000 !important;
+    border: 3px solid #000000 !important;
     text-align: center;
     position: absolute;
-    width: 8vw;
+    width: 8.1vw;
     height: 4vw;
     border-radius: 0%;
     inset: 0 0 0 0; 
@@ -216,8 +252,8 @@ body {
 
 @keyframes spin {
     from {
-        transform: perspective(30vw) rotateX(-0deg) rotateY(0deg);  
+        transform: perspective(35vw) rotateX(-2deg) rotateY(0deg);  
     } to {
-        transform: perspective(30vw) rotateX(-0deg) rotateY(360deg);
+        transform: perspective(35vw) rotateX(-2deg) rotateY(360deg);
     }
 } 
