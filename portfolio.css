@@ -217,8 +217,8 @@ body {
 
 @keyframes spin {
     from {
-        transform: perspective(50vw) rotateX(-0deg) rotateY(0deg);  
+        transform: perspective(30vw) rotateX(-0deg) rotateY(0deg);  
     } to {
-        transform: perspective(50vw) rotateX(-0deg) rotateY(360deg);
+        transform: perspective(30vw) rotateX(-0deg) rotateY(360deg);
     }
 } 
