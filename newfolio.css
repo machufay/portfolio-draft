@@ -8,7 +8,7 @@ body {
     text-align: center;
     font-weight:1000;
     color:#FBFFE4;
-    width: 100vw;;
+    width: 100vw;
 }
 
 /*LANDING PAGE CODE*/
@@ -17,7 +17,7 @@ body {
     background-image: linear-gradient(270deg, #485a46); /*#1a2c27, #1a4c27, #3D8D7A, #B3D8A8, #819A91, #537D5D green grad #72afc7, #3f628f blue grad|| #87CEEB sky blue, #4b9b5c fair green*/
     position: relative;
     width:100vw;
-    height: 50.5vw;
+    height: 60vw;
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ body {
     position: absolute;
     width: 50vw;
     left: 0vw;
-    height: 50.5vw;
+    height: 60vw;
     background-color: #73946b;
     clip-path: ellipse(47vw 50vw at 0vw 15vw);
 }
@@ -313,13 +313,13 @@ body {
         -0.1vw 0.1vw #1a2c27,
         0.1vw 0.1vw #1a2c27;
     }
-/*skills CODE*/
+/*SKILLS CODE*/
 .skills {
     position: relative;
     height: 60vw;
     width:100vw;
     background-image: linear-gradient(170deg, #485a46 30%, #4b5e49 30%, #4b5e49 45%, #5a6e56 45%, #5a6e56 60%, #5f745c 60%, #5f745c 75%, #6f856b 75%, #6f856b 100%);
-    top:-16vw;
+    top:-10vw;
 }
 .skills-trapezoid {
    position: absolute;
@@ -435,30 +435,31 @@ body {
             -0.1vw 0.1vw #1a2c27,
             0.1vw 0.1vw #1a2c27;
         }
-/*hobbies CODE*/
-.hobbies {
+/*PROJECTS CODE*/
+.projects {
     position: relative;
     height: 60vw;
     width:100vw;
     background-image: linear-gradient(170deg, #95A773);
-    top:-25vw;
+    top:-18vw;
 }
-.hobbies h1{
-        position: relative;
-        z-index: 1;
-        margin-top: 0vw;
-        margin-left: 20vw;
-        font-size: 3vw;
-        text-shadow: -0.3vw 0.3vw #1a2c27, 
-            -0.17vw -0.17vw #1a2c27, 
-            0.17vw -0.17vw #1a2c27, 
-            0.17vw 0.17vw #1a2c27;
-        padding: 1.2vw;
-        background-color:#73946B;
-        width: 20vw;
-        box-shadow: -0.3vw 0.3vw #15221e;
+.projects h1{
+    position: relative;
+    z-index: 1;
+    margin-top: 0vw;
+    margin-left: 20vw;
+    font-size: 3vw;
+    text-shadow: 
+        -0.3vw 0.3vw #1a2c27, 
+        -0.17vw -0.17vw #1a2c27, 
+        0.17vw -0.17vw #1a2c27, 
+        0.17vw 0.17vw #1a2c27;
+    padding: 1.2vw;
+    background-color:#73946B;
+    width: 20vw;
+    box-shadow: -0.3vw 0.3vw #15221e;
     }
-    .skills h1:hover{
+    .projects h1:hover{
         transform: scale(1.1);
         transition: transform 0.2s ease-out;
-    }  
+    }
