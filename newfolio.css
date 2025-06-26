@@ -330,7 +330,7 @@ body {
    width: 50vw;
    transform: rotateZ(-10deg);
    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-   background-image: linear-gradient(45deg, #bbb66e 15%, #cfc976 15%, #c9c376 30%, #cfc976 30%, #cfc976 45%, #d0c97a 45%, #d0c97a 60%, #d1cc7e 60%, #d1cc7e 75%, #d4d178 75%, #e0dd85 100%);
+   background-image: linear-gradient(45deg, #bbb66e 15%, #cfc976 15%, #c9c376 30%, #cfc976 30%, #cfc976 45%, #d0c97a 45%, #c2bb72 60%, #d1cc7e 60%, #c7c27a 75%, #ddda76 75%, #e0dd85 100%);
 }
 .hobbies h1{
         position: relative;
