@@ -1,3 +1,4 @@
+//LANDING SLIDER
 // V A R I A B L E S
 const slider = document.querySelector(".slider");
 const matthew = document.querySelector(".name");
@@ -126,26 +127,4 @@ const item8 = document.getElementById("item8");
    slider.addEventListener("click", function() {
 
    });
-/* Old animation (DEFUNCT)
-let rotatingAngle = 0;
-function rotateSlider() {
-  rotatingAngle += 1;
-  slider.style.transform = "rotateY("+rotatingAngle+"deg) perspective(100vw) rotateX(-16deg)";
-
-  if (rotatingAngle < 360) { // Stop condition
-   setTimeout(rotateSlider, 10); // Call again after 10ms
-  } else {
-      if (rotatingAngle >= 360){ //if the angle exceeds 360, subtract 360 from it
-         rotatingAngle -= 360;
-      }
-      return done;
-  }
-}
-
-slider.addEventListener("click", function(){
-   rotateSlider();
-   if (rotatingAngle == 360){
-      rotatingAngle = 0;
-   }
-});*/
 
