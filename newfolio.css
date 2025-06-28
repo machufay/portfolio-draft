@@ -436,10 +436,10 @@ body {
 /*PROJECTS CODE*/
 .projects {
     position: relative;
-    height: 70vw;
+    height: 90vw;
     width:100vw;
     background-image: linear-gradient(170deg, #95A773);
-    top:-20vw;
+    top:-26vw;
 }
     /*header styling*/
     .projects h1{
@@ -526,20 +526,26 @@ body {
             color: #fff78e;
             transition: transform 0.5s ease-out text-shadow 0.5s ease-out;
         }
-    
+    .projects-flex2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 80vw;
+        top: 7vw;
+        left: 5vw;
+    }
     .projects-bulletin{
-        margin-left: 10vw;
-        margin-top: 7vw;
         background-color: #848d62;
         line-height: 1.8;
-        width: 30vw;
-        box-shadow: -1vw 1vw #485a46;
-      }
+        width: 45vw;
+        height: 20vw;
+        border-radius: 2vw;;
+        }
         .projects-bulletin:hover{
             transform: scale(1.02);
             box-shadow: -0.2vw 0.2vw #ffffff;
             transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
-          }
+        }
         .projects-bulletin h3{
             padding: 2vw;
             font-size: 1.6vw;
@@ -551,12 +557,44 @@ body {
             0.1vw -0.1vw #485a46, 
             0.1vw 0.1vw #485a46;
         }
+        .project-nextech {
+            position:relative;
+            left: 2vw;
+            width: 25vw;
+            height: 25vw;
+            box-shadow: -1vw 1vw #485a46;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+        .project-nextech img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 /*HOBBIES CODE*/
 .hobbies {
     position: relative;
     height: 70vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top:-20vw;
+    top: 15vw;
 }
-    
+.hobbies h1{
+        position: relative;
+        z-index: 1;
+        margin-top: 0vw;
+        margin-left: 20vw;
+        font-size: 3vw;
+        text-shadow: 
+            -0.3vw 0.3vw #1a2c27, 
+            -0.17vw -0.17vw #1a2c27, 
+            0.17vw -0.17vw #1a2c27, 
+            0.17vw 0.17vw #1a2c27;
+        padding: 1.2vw;
+        background-color:#73946B;
+        width: 20vw;
+        box-shadow: -0.3vw 0.3vw #15221e;
+        }
+        .hobbies h1:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease-out;
+        }
