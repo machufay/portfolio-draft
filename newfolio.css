@@ -329,6 +329,7 @@ body {
    transform: rotateZ(-10deg);
    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
    background-image: linear-gradient(45deg, #bbb66e 15%, #cfc976 15%, #c9c376 30%, #cfc976 30%, #cfc976 45%, #d0c97a 45%, #c2bb72 60%, #d1cc7e 60%, #c7c27a 75%, #ddda76 75%, #e0dd85 100%);
+    background-attachment: fixed;
 }
 .skills h1{
         position: relative;
@@ -358,7 +359,7 @@ body {
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 100vw;
+        width: 90vw;
     }    
         .skills-slider {
             width: 8.1vw;
@@ -469,7 +470,7 @@ body {
         display: flex;
         justify-content: left;
         position: relative;
-        width: 100vw;
+        width: 90vw;
     }
     .project-item{
         position: relative;
@@ -529,17 +530,19 @@ body {
     .projects-flex2 {
         display: flex;
         justify-content: center;
+        align-items: center;
         position: relative;
         width: 80vw;
         top: 7vw;
         left: 5vw;
     }
-    .projects-bulletin{
+    .projects-bulletin {
         background-color: #848d62;
         line-height: 1.8;
         width: 45vw;
         height: 20vw;
-        border-radius: 2vw;;
+        border-radius: 2vw;
+        clip-path: polygon(0% 0%, 87% 0, 100% 50%, 87% 100%, 0% 100%);
         }
         .projects-bulletin:hover{
             transform: scale(1.02);
@@ -576,7 +579,7 @@ body {
     height: 70vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top: 15vw;
+    top: -35vw;
 }
 .hobbies h1{
         position: relative;
@@ -598,3 +601,19 @@ body {
             transform: scale(1.1);
             transition: transform 0.2s ease-out;
         }
+.hobbies-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90vw;
+    top: 5vw;
+}
+.hexagon {
+    width: 12vw;
+    height: 10vw;
+    background-color: #485a46;
+    position: relative;
+    margin: 0 1vw;
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
