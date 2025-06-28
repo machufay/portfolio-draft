@@ -610,10 +610,13 @@ body {
     top: 5vw;
 }
 .hexagon {
-    width: 12vw;
-    height: 10vw;
-    background-color: #485a46;
+    width: 20vw;
+    height: 17vw;
+    background-color: #5f745c;
     position: relative;
     margin: 0 1vw;
-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
 }
+    .hexagon.middle{
+        margin-top: 16vw;
+    }
