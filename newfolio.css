@@ -439,8 +439,25 @@ body {
     position: relative;
     height: 93vw;
     width:100vw;
-    background-image: linear-gradient(170deg, #95A773);
-    top:-26vw;
+    background-image: linear-gradient(170deg, #CFC976);
+    top:-20vw;
+    /* background-image: linear-gradient(
+        190deg,
+        #CFC976 20%,
+        #d2ce74 25%, #d2ce74 25%,
+        #d2cf81 25%, #d2cf81 40%,
+        #cfc977 40%, #d1cc7e 55%,
+        #c7c27a 55%, #c7c27a 70%,
+        #bbb66e 70%, #bbb66e 85%,
+        #b3a95e 85%, #b3a95e 100%
+    ); */
+    background-image: linear-gradient( 10deg, 
+    #97a773 20%, #92a173 20%, 
+    #92a173 30%, #99a877 30%, 
+    #99a877 45%, #8a9b6b 45%, 
+    #93a472 60%, #99a873 60%, 
+    #9ba977 75%, #97a773 75%, #97a773 100%);
+        /* background-image: linear-gradient( 225deg, #97a773 15%, #92a173 15%, #92a173 30%, #99a877 30%, #99a877 45%, #8a9b6b 45%, #95a773 60%, #99a873 60%, #99a873 75%, #97a773 75%, #97a773 100%); */
 }
     /*header styling*/
     .projects h1{
@@ -585,6 +602,22 @@ body {
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
     top: -35vw;
+    /* background-image: linear-gradient( 10deg, 
+    #97a773 20%, #92a173 20%, 
+    #92a173 30%, #99a877 30%, 
+    #99a877 45%, #8a9b6b 45%, 
+    #93a472 60%, #99a873 60%, 
+    #9ba977 75%, #97a773 75%, #97a773 100%); */
+    background-image: linear-gradient(
+        190deg,
+        #CFC976 20%,
+        #d2ce74 25%, #d2ce74 25%,
+        #d2cf81 25%, #d2cf81 40%,
+        #cfc977 40%, #d1cc7e 55%,
+        #c7c27a 55%, #c7c27a 70%,
+        #bbb66e 70%, #bbb66e 85%,
+        #b3a95e 85%, #b3a95e 100%
+    );
 }
 .hobbies h1{
         position: relative;
@@ -607,7 +640,13 @@ body {
             transition: transform 0.2s ease-out;
         }
 .hobbies-shape {
-    
+    position: absolute;
+    background-color: #485a46;
+    width:70vw;
+    height:70vw;
+    top: 10vw;
+    left: 10vw;
+    clip-path: polygon(58% 0, 86% 7%, 100% 44%, 73% 68%, 23% 77%, 0 49%, 14% 23%);
 }
 .hobbies-flex {
     display: flex;
@@ -621,7 +660,7 @@ body {
     margin: 0 -3vw 0 -3vw;
     width: 30vw;
     height: 24vw;
-    background-color: #5f745c;
+    background-color: #c9c376;
     position: relative;
     clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
 }
