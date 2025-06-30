@@ -1,6 +1,13 @@
 *{
     margin: 0px; /*gets rid of the annoying background border*/
+    scroll-behavior: smooth;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* MOUNTAIN BACKGROUND STYLING */
 .simple-mountains {
@@ -216,6 +223,7 @@ body {
     font-weight: 1000;
 }
 
+
 /*PILL BUTTON CODE*/
 .pill {
     position: relative;
@@ -232,6 +240,7 @@ body {
         box-shadow: -0.1vw 0.1vw #15221e;
         transform: scale(0.95);
     }
+
 
 /*ABOUT ME CODE*/
 .about-me {
@@ -325,6 +334,8 @@ body {
         -0.1vw 0.1vw #1a2c27,
         0.1vw 0.1vw #1a2c27;
     }
+
+
 /*SKILLS CODE*/
 .skills {
     position: relative;
@@ -361,8 +372,7 @@ body {
     .skills h1:hover{
         transform: scale(1.1);
         transition: transform 0.2s ease-out;
-    } 
-    
+    }     
     /*flexbox container for hobby slider and bulletin*/
     .skills-flex{
         left: 6vw;
@@ -377,6 +387,7 @@ body {
             width: 8.1vw;
             height: 6vw;
             margin-right: 20vw;
+            margin-left: 10vw;
             margin-top: 0vw;
             transform-style: preserve-3d;
             transform:
@@ -446,13 +457,14 @@ body {
             0.1vw 0.1vw #1a2c27;
         }
 
+
 /*PROJECTS CODE*/
 .projects {
     position: relative;
     height: 100vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top:-10vw;
+    top:0vw;
     background-image: linear-gradient( 190deg, 
     #97a773 20%, #92a173 20%, 
     #92a173 30%, #99a877 30%, 
@@ -483,7 +495,7 @@ body {
         }
     /*project items (flexbox)*/
     .projects-flex{
-        top: 2vw;
+        top: 5vw;
         margin-left: 8vw;
         display: flex;
         justify-content: left;
@@ -546,9 +558,9 @@ body {
             transition: transform 0.5s ease-out text-shadow 0.5s ease-out;
         }
         .project-controls{
-            position: absolute;
-            left: 35.5vw;
-            bottom: 29vw;
+            position: relative;
+            right: 6vw;
+            top: 10vw;
         }
     .projects-flex2 {
         display: flex;
@@ -598,6 +610,8 @@ body {
             height: 100%;
             object-fit: cover;
         }
+
+
 /*HOBBIES CODE*/
 .hobbies {
     position: relative;
@@ -643,7 +657,6 @@ body {
     clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 16% 19%);
     clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 14% 14%);
 }
-    
     /* HEXAGON HOBBIES */
     .hobbies-flex {
         display: flex;
@@ -712,6 +725,7 @@ body {
                 object-fit: cover;
             }
 
+
 /* GALLERY CODE*/
 .gallery {
     position: relative;
@@ -722,9 +736,9 @@ body {
     background-image: linear-gradient(
         170deg,#3C4839 20%, 
         #3C4839 45%, #3C4839 45%, 
-        #4b5e49 45%, #4b5e49 60%, 
-        #5a6e56 60%, #5a6e56 75%, 
-        #5f745c 75%, #5f745c 100%);
+        #425240 45%, #425240 60%, 
+        #53644f 60%, #53644f 75%, 
+        #495846 75%, #495846 100%);
 }
         /*GALLERY SLIDER*/
         .gallery-slider {
@@ -800,17 +814,41 @@ body {
             0.1vw 0.1vw #485a46;
         }
 
+
 /*EDUCATION CODE*/
  .education {
     position: relative;
     height: 70vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top: 10vw;
+    top: -15vw;
     background-image: linear-gradient(
-        170deg,#3C4839 20%, 
-        #3C4839 45%, #3C4839 45%, 
-        #4b5e49 45%, #4b5e49 60%, 
-        #5a6e56 60%, #5a6e56 75%, 
-        #5f745c 75%, #5f745c 100%);
-} 
+        190deg,
+        #A8B885 0%,   #A8B885 20%,
+        #8FA370 20%,  #8FA370 40%,
+        #768C5B 40%,  #768C5B 60%,
+        #5F745C 60%,  #5F745C 80%,
+        #485A46 80%,  #485A46 100%
+    );
+}
+.education h1{
+        position: relative;
+        z-index: 1;
+        margin-top: 0vw;
+        margin-left: 20vw;
+        font-size: 3vw;
+        text-shadow: 
+            -0.3vw 0.3vw #1a2c27, 
+            -0.17vw -0.17vw #1a2c27, 
+            0.17vw -0.17vw #1a2c27, 
+            0.17vw 0.17vw #1a2c27;
+        padding: 1.2vw;
+        background-color:#73946B;
+        width: 20vw;
+        box-shadow: -0.3vw 0.3vw #15221e;
+        }
+
+        .education h1:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease-out;
+        }

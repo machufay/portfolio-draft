@@ -130,6 +130,9 @@ const item8 = document.getElementById("item8");
 
 
 
+
+
+
 //HOBBIES HEXAGON IMAGE APPEAR ON HOVER
 let hexagonRunning = document.querySelector(".left");
 let hexagonArt = document.querySelector(".middle");
