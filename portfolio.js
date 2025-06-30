@@ -128,3 +128,56 @@ const item8 = document.getElementById("item8");
 
    });
 
+
+
+//HOBBIES HEXAGON IMAGE APPEAR ON HOVER
+let hexagonRunning = document.querySelector(".left");
+let hexagonArt = document.querySelector(".middle");
+let hexagonMath = document.querySelector(".right");
+
+let hexagonTop = document.querySelector(".hexagon-top");
+let runningImage = document.querySelector(".hobbies-running");
+let artImage = document.querySelector(".hobbies-art");
+let mathImage = document.querySelector(".hobbies-math");
+
+hexagonTop.style.display = "none";
+   
+      var hexagonIn = [
+      { transform: ' rotateY(-90deg)' },
+      { transform: ' rotateY(0deg)' }
+      ];
+      var hexagonTime = {
+      duration: 300, // mseconds
+      iterations: 1, // Repeat
+      easing: 'ease-out' // rate
+      };
+
+hexagonRunning.addEventListener("mouseover", function(){
+   hexagonTop.animate(hexagonIn, hexagonTime);
+   hexagonTop.style.display = "block";
+   runningImage.style.display = "block";
+});
+hexagonRunning.addEventListener("mouseout", function(){
+   hexagonTop.style.display = "none";
+   runningImage.style.display = "none";
+});
+
+hexagonArt.addEventListener("mouseover", function(){
+   hexagonTop.animate(hexagonIn, hexagonTime);
+   hexagonTop.style.display = "block";
+   artImage.style.display = "block";
+});
+hexagonArt.addEventListener("mouseout", function(){
+   hexagonTop.style.display = "none";
+   artImage.style.display = "none";
+});
+
+hexagonMath.addEventListener("mouseover", function(){
+   hexagonTop.animate(hexagonIn, hexagonTime);
+   hexagonTop.style.display = "block";
+   mathImage.style.display = "block";
+});
+hexagonMath.addEventListener("mouseout", function(){
+   hexagonTop.style.display = "none";
+   mathImage.style.display = "none";
+});

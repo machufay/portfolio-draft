@@ -31,6 +31,13 @@ body {
     clip-path: ellipse(47vw 50vw at 0vw 15vw);
 }
 
+.landing-mountains{
+    position:absolute;
+    width: 80vw;
+    right: 0vw;
+    top:30vw;
+}
+
 .green-box {
     display: none;
     z-index:0;
@@ -441,23 +448,12 @@ body {
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
     top:-20vw;
-    /* background-image: linear-gradient(
-        190deg,
-        #CFC976 20%,
-        #d2ce74 25%, #d2ce74 25%,
-        #d2cf81 25%, #d2cf81 40%,
-        #cfc977 40%, #d1cc7e 55%,
-        #c7c27a 55%, #c7c27a 70%,
-        #bbb66e 70%, #bbb66e 85%,
-        #b3a95e 85%, #b3a95e 100%
-    ); */
-    background-image: linear-gradient( 10deg, 
+    background-image: linear-gradient( 190deg, 
     #97a773 20%, #92a173 20%, 
     #92a173 30%, #99a877 30%, 
-    #99a877 45%, #8a9b6b 45%, 
+    /* #99a877 45%, #8a9b6b 45%,  */
     #93a472 60%, #99a873 60%, 
-    #9ba977 75%, #97a773 75%, #97a773 100%);
-        /* background-image: linear-gradient( 225deg, #97a773 15%, #92a173 15%, #92a173 30%, #99a877 30%, #99a877 45%, #8a9b6b 45%, #95a773 60%, #99a873 60%, #99a873 75%, #97a773 75%, #97a773 100%); */
+    #95a274 75%, #91a06e 75%, #97a773 100%);
 }
     /*header styling*/
     .projects h1{
@@ -559,7 +555,7 @@ body {
         left: 5vw;
     }
     .projects-bulletin {
-        background-color: #848d62;
+        background-color: #767d5b;
         line-height: 1.8;
         width: 45vw;
         height: 20vw;
@@ -601,22 +597,13 @@ body {
     height: 70vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top: -35vw;
-    /* background-image: linear-gradient( 10deg, 
-    #97a773 20%, #92a173 20%, 
-    #92a173 30%, #99a877 30%, 
-    #99a877 45%, #8a9b6b 45%, 
-    #93a472 60%, #99a873 60%, 
-    #9ba977 75%, #97a773 75%, #97a773 100%); */
+    top: -30vw;
     background-image: linear-gradient(
         190deg,
-        #CFC976 20%,
-        #d2ce74 25%, #d2ce74 25%,
-        #d2cf81 25%, #d2cf81 40%,
-        #cfc977 40%, #d1cc7e 55%,
-        #c7c27a 55%, #c7c27a 70%,
-        #bbb66e 70%, #bbb66e 85%,
-        #b3a95e 85%, #b3a95e 100%
+        #797F66 0%,   #797F66 20%,
+        #797F66 20%,  #8a8e73 40%,
+        #a0a57c 40%,  #a0a57c 60%,
+        #97956f 60%,  #97956f 100%
     );
 }
 .hobbies h1{
@@ -641,33 +628,93 @@ body {
         }
 .hobbies-shape {
     position: absolute;
-    background-color: #485a46;
+    background-color: #546851;
     width:70vw;
     height:70vw;
     top: 10vw;
     left: 10vw;
-    clip-path: polygon(58% 0, 86% 7%, 100% 44%, 73% 68%, 23% 77%, 0 49%, 14% 23%);
+    clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 16% 19%);
+    clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 14% 14%);
 }
-.hobbies-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 90vw;
-    top: 5vw;
-}
-.hexagon {
-    margin: 0 -3vw 0 -3vw;
-    width: 30vw;
-    height: 24vw;
-    background-color: #c9c376;
-    position: relative;
-    clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
-}
-    .hexagon.middle{
-        margin-top: 29vw;
+    
+    /* HEXAGON HOBBIES */
+    .hobbies-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 90vw;
+        top: 5vw;
     }
-    .hexagon:hover{
-        transform: scale(1.05);
+    .hexagon {
+        margin: 0 -3vw 0 -3vw;
+        width: 30vw;
+        height: 24vw;
+        background-color: #c3bf8c;
+        position: relative;
+        clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
+    }
+        .hexagon.middle{
+            margin-top: 29vw;
+        }
+        .hexagon:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease-out;
+        }
+        .hexagon h2 {
+            margin-top: 1.5vw;
+            font-size: 1.9vw;
+            font-weight: 700;
+            text-shadow: 
+            -0.2vw 0.2vw #485a46,
+            -0.1vw 0.1vw #485a46, 
+            -0.1vw -0.1vw #485a46, 
+            0.1vw -0.1vw #485a46, 
+            0.1vw 0.1vw #485a46;
+            }
+        .hexagon p{
+            font-size: 1.3vw;
+            margin-top: 1vw;
+            line-height: 1.5;
+            font-weight: 650;
+            padding: 0vw 6vw 0vw 6vw;
+            color:white;
+            text-align: jsutify;
+            text-shadow: 
+            -0.05vw 0.05vw #485a46, 
+            -0.05vw -0.05vw #485a46, 
+            0.05vw -0.05vw #485a46, 
+            0.05vw 0.05vw #485a46;
+        }
+    .hexagon-top{
+        display: block;
+        position: absolute;
+        top:-48vw;
+        left: 33vw;
+        margin: 0 -3vw 0 -3vw;
+        height: 24vw;
+        width: 30vw;
+        background-color: #c3bf8c;
+        position: relative;
+        clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
+    }
+            .hexagon-top img{
+                display:none;
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
 
-    }
+.education {
+    position: relative;
+    height: 70vw;
+    width:100vw;
+    background-image: linear-gradient(170deg, #CFC976);
+    top: -30vw;
+    background-image: linear-gradient(
+        170deg,#3C4839 20%, 
+        #3C4839 45%, #3C4839 45%, 
+        #4b5e49 45%, #4b5e49 60%, 
+        #5a6e56 60%, #5a6e56 75%, 
+        #5f745c 75%, #5f745c 100%);
+}
