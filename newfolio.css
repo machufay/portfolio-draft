@@ -2,6 +2,17 @@
     margin: 0px; /*gets rid of the annoying background border*/
 }
 
+/* MOUNTAIN BACKGROUND STYLING */
+.simple-mountains {
+        width:100vw;
+        position: absolute;
+        left: 0;
+        bottom:0;
+    }
+.simple-mountains .skills-mountains{
+    top:20vw;
+}
+
 /*BODY STYLING*/
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -258,12 +269,7 @@ body {
         z-index: 2;
         box-shadow: 0vw 0.2vw #485a46;
     }
-    .simple-mountains {
-        width:100vw;
-        position: absolute;
-        left: 0;
-        bottom:0;
-    }
+    
     .about-me .portrait {
         position:relative;
         width: 25vw;
@@ -325,7 +331,7 @@ body {
     height: 60vw;
     width:100vw;
     background-image: linear-gradient(170deg, #485a46 30%, #4b5e49 30%, #4b5e49 45%, #5a6e56 45%, #5a6e56 60%, #5f745c 60%, #5f745c 75%, #6f856b 75%, #6f856b 100%);
-    top:-10vw;
+    top:0vw;
 }
 .skills-trapezoid {
    position: absolute;
@@ -447,7 +453,7 @@ body {
     height: 93vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top:-20vw;
+    top:-5vw;
     background-image: linear-gradient( 190deg, 
     #97a773 20%, #92a173 20%, 
     #92a173 30%, #99a877 30%, 
@@ -597,7 +603,7 @@ body {
     height: 70vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top: -30vw;
+    top: -5vw;
     background-image: linear-gradient(
         190deg,
         #797F66 0%,   #797F66 20%,
@@ -705,7 +711,8 @@ body {
                 object-fit: cover;
             }
 
-.education {
+/* GALLERY CODE*/
+.gallery {
     position: relative;
     height: 70vw;
     width:100vw;
@@ -718,3 +725,76 @@ body {
         #5a6e56 60%, #5a6e56 75%, 
         #5f745c 75%, #5f745c 100%);
 }
+        /*GALLERY SLIDER*/
+        .gallery-slider {
+            position: absolute;
+            width: 16.4vw;
+            height: 12vw;
+            top: 5vw;
+            left: 55vw; 
+            transform-style: preserve-3d; 
+            transform:
+            rotateY(0deg)
+            perspective(60vw) 
+            rotateX(-10deg); 
+            animation: gallery 20s linear infinite;
+        }
+        .gallery-slider .gallery-item{
+            border: 0.2vw solid #000000 !important;
+            position: absolute;
+            width: 16.4vw;
+            height: 12vw;
+            border-radius: 0%;
+            inset: 0 0 0 0; 
+            transform:
+            rotateY(calc( var(--galleryposition) * (360 / var(--galleryquantity)) * 1deg))
+            translateZ(24vw);
+        }
+            .gallery-item img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @keyframes gallery {
+                from {
+                    transform: perspective(70vw) rotateX(-0deg) rotateY(0deg);  
+                } to {
+                    transform: perspective(70vw) rotateX(-0deg) rotateY(360deg);
+                }
+            }
+         .gallery-bulletin{
+            margin-left: 2vw;
+            top: 0vw;
+            background-color: #73946b;
+            line-height: 1.8;
+            width: 30vw;
+            box-shadow: -1vw 1vw #ffffff;
+            clip-path: polygon(0% 0%, 87% 0, 100% 50%, 87% 100%, 0% 100%);
+        }
+            .gallery-bulletin:hover{
+                transform: scale(1.02);
+                box-shadow: -0.2vw 0.2vw #ffffff;
+                transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
+            }
+        .gallery-bulletin h2{
+            font-size: 2.5vw;
+            font-weight: 700;
+            margin-right:2vw;
+            text-shadow: 
+            -0.2vw 0.2vw #485a46,
+            -0.1vw 0.1vw #485a46, 
+            -0.1vw -0.1vw #485a46, 
+            0.1vw -0.1vw #485a46, 
+            0.1vw 0.1vw #485a46;
+        }
+        .gallery-bulletin h3{
+            padding: 2vw;
+            font-size: 1.6vw;
+            color:#ffffff;
+            text-align: left;
+            text-shadow:
+            -0.1vw 0.1vw #485a46, 
+            -0.1vw -0.1vw #485a46, 
+            0.1vw -0.1vw #485a46, 
+            0.1vw 0.1vw #485a46;
+        }
