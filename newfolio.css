@@ -268,8 +268,8 @@ body {
         box-shadow: -0.3vw 0.3vw #15221e;
     }
     .about-me h1:hover{
-        transform: scale(1.1);
-        transition: transform 0.2s ease-out;
+        transform: scale(1.04);
+        transition: transform 0.5s ease-out;
     }
     .about-me-top{
         width:100vw;
@@ -318,9 +318,9 @@ body {
         border-radius: 0.2vw;
     }
         .bulletin:hover{
-            transform: scale(0.95);
-            box-shadow: -0.2vw 0.2vw #485a46;
-            transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
+            transform: scale(1.04);
+            box-shadow: -0.7vw 0.7vw #485a46;
+            transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
         }
 
     .bulletin h3{
@@ -825,10 +825,10 @@ body {
     background-image: linear-gradient(
         190deg,
         #A8B885 0%,   #A8B885 20%,
-        #8FA370 20%,  #8FA370 40%,
-        #768C5B 40%,  #768C5B 60%,
-        #5F745C 60%,  #5F745C 80%,
-        #485A46 80%,  #485A46 100%
+        #9db37e 20%,  #9db37e 50%,
+        #8FA370 50%,  #8FA370 60%,
+        #768C5B 60%,  #768C5B 80%,
+        #708364 80%,  #708364 100%
     );
 }
 .education h1{
