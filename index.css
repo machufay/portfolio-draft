@@ -7,6 +7,30 @@ a{
     text-decoration: none;
     color: white;
 }
+/* .back {
+    animation: parallax 5s ease-in-out infinite;
+    height: 50vw;
+    width: 110vw;
+} */
+@keyframes fluctuate {
+    0% {
+        transform: scale(1);}
+    50% {
+        transform: scale(1.04);}
+    100% {
+        transform:scale(1);}
+}
+@keyframes parallax{
+    0% {
+        transform: translateX(0vw);
+    }
+    50% {
+        transform: translateX(10vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
 
 
 /* MOUNTAIN BACKGROUND STYLING */
@@ -27,6 +51,7 @@ body {
     font-weight:1000;
     color:#FBFFE4;
     width: 100vw;
+    background-color: #797F66;
 }
 
 /*LANDING PAGE CODE*/
@@ -97,7 +122,7 @@ body {
     }
     .title:hover{
         transform: scale(1.1);
-        transition: transform 0.3s ease-out;
+        transition: transform 0.5s ease-out;
     }
 
     .half-page h3, h2{
@@ -276,7 +301,7 @@ body {
         height: 6vw;
         background-color: #73946b;
         z-index: 2;
-        box-shadow: 0vw 0.2vw #485a46;
+        box-shadow: 0vw 0.1vw #485a46;
     }
     
     .about-me .portrait {
@@ -304,8 +329,8 @@ body {
     }
         .sun:hover {
             box-shadow: 0.2vw 0.2vw #cea842;
-            transform: scale(1.2);
-            transition: transform 0.1s ease-out;
+            transform: scale(1.04);
+            transition: transform 0.5s ease-out;
         }
     .bulletin{
         background-color: #5c6e53;
@@ -353,6 +378,7 @@ body {
    transform: rotateZ(-10deg);
    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
    background-image: linear-gradient(45deg, #bbb66e 15%, #cfc976 15%, #c9c376 30%, #cfc976 30%, #cfc976 45%, #d0c97a 45%, #c2bb72 60%, #d1cc7e 60%, #c7c27a 75%, #ddda76 75%, #e0dd85 100%);
+   animation: fluctuate 8s ease-in-out infinite;
 }
 .skills h1{
         position: relative;
@@ -370,8 +396,8 @@ body {
         box-shadow: -0.3vw 0.3vw #15221e;
     }
     .skills h1:hover{
-        transform: scale(1.1);
-        transition: transform 0.2s ease-out;
+        transform: scale(1.04);
+        transition: transform 0.5s ease-out;
     }     
     /*flexbox container for hobby slider and bulletin*/
     .skills-flex{
@@ -439,11 +465,12 @@ body {
             line-height: 1.8;
             width: 30vw;
             box-shadow: -1vw 1vw #ffffff;
+            animation: fluctuate 7s ease-in-out infinite;
         }
             .skills-bulletin:hover{
+                box-shadow: -0.7vw 0.7vw #ffffff;
                 transform: scale(1.02);
-                box-shadow: -0.2vw 0.2vw #ffffff;
-                transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
+                transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
             }
         .skills-bulletin h3{
             padding: 2vw;
@@ -461,10 +488,10 @@ body {
 /*PROJECTS CODE*/
 .projects {
     position: relative;
-    height: 100vw;
+    height: 80vw;
     width:100vw;
     background-image: linear-gradient(170deg, #CFC976);
-    top:0vw;
+    top:-10vw;
     background-image: linear-gradient( 190deg, 
     #97a773 20%, #92a173 20%, 
     #92a173 30%, #99a877 30%, 
@@ -490,8 +517,8 @@ body {
         box-shadow: -0.3vw 0.3vw #15221e;
         }
         .projects h1:hover{
-            transform: scale(1.1);
-            transition: transform 0.2s ease-out;
+            transform: scale(1.04);
+            transition: transform 0.5s ease-out;
         }
     /*project items (flexbox)*/
     .projects-flex{
@@ -500,7 +527,7 @@ body {
         display: flex;
         justify-content: left;
         position: relative;
-        width: 90vw;
+        width: 80vw;
     }
     .project-item{
         position: relative;
@@ -582,8 +609,8 @@ body {
         }
         .projects-bulletin:hover{
             transform: scale(1.02);
-            box-shadow: -0.2vw 0.2vw #ffffff;
-            transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
+            box-shadow: -0.7vw 0.7vw #ffffff;
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
         }
         .projects-bulletin h3{
             padding: 2vw;
@@ -644,8 +671,8 @@ body {
         box-shadow: -0.3vw 0.3vw #15221e;
         }
         .hobbies h1:hover{
-            transform: scale(1.1);
-            transition: transform 0.2s ease-out;
+            transform: scale(1.04);
+            transition: transform 0.5s ease-out;
         }
 .hobbies-shape {
     position: absolute;
@@ -654,8 +681,8 @@ body {
     height:70vw;
     top: 5vw;
     left: 10vw;
-    clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 16% 19%);
     clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 14% 14%);
+    animation: fluctuate 8s ease-in-out infinite;
 }
     /* HEXAGON HOBBIES */
     .hobbies-flex {
@@ -673,6 +700,7 @@ body {
         background-color: #c3bf8c;
         position: relative;
         clip-path: polygon(26% 0%, 74% 0%, 100% 50%, 74% 100%, 26% 100%, 0% 50%);
+        /* animation: fluctuate 8s ease-in-out infinite; */
     }
         .hexagon.middle{
             margin-top: 29vw;
@@ -788,8 +816,8 @@ body {
         }
             .gallery-bulletin:hover{
                 transform: scale(1.02);
-                box-shadow: -0.2vw 0.2vw #ffffff;
-                transition: transform 0.1s ease-out box-shadow 0.1s ease-out;
+                box-shadow: -0.7vw 0.7vw #ffffff;
+                transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
             }
         .gallery-bulletin h2{
             font-size: 2.5vw;
@@ -849,8 +877,8 @@ body {
         }
 
         .education h1:hover{
-            transform: scale(1.1);
-            transition: transform 0.2s ease-out;
+            transform: scale(1.04);
+            transition: transform 0.5s ease-out;
         }
     
     /* .education-flex {
@@ -923,8 +951,11 @@ body {
         color:gold;
         font-size: 2vw;
     }
-    .edu-inline a:hover h2{
-        transform: scale(1.1);
+    .edu-inline a{
+        text-decoration: none;
+    }
+    .edu-inline a:hover{
+        transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
         }
 
@@ -979,4 +1010,37 @@ body {
                 100% {
                     transform: perspective(70vw) rotateX(-0deg) rotateY(365deg);}
                 }
-            
+
+/* ABOUT-THIS-PORTFOLIO CODE */
+ .about {
+    position: relative;
+    height: 70vw;
+    width:100vw;
+    top: -15vw;
+    background-image: linear-gradient(
+        170deg,#3C4839 20%, 
+        #3C4839 45%, #3C4839 45%, 
+        #425240 45%, #425240 60%, 
+        #53644f 60%, #53644f 75%, 
+        #495846 75%, #495846 100%);
+ }
+    .about h1{
+        position: relative;
+        z-index: 1;
+        top: 7vw;
+        margin-left: 20vw;
+        font-size: 3vw;
+        text-shadow: 
+            -0.3vw 0.3vw #1a2c27, 
+            -0.17vw -0.17vw #1a2c27, 
+            0.17vw -0.17vw #1a2c27, 
+            0.17vw 0.17vw #1a2c27;
+        padding: 1.2vw;
+        background-color:#73946B;
+        width: 20vw;
+        box-shadow: -0.3vw 0.3vw #15221e;
+    }
+        .about h1:hover{
+            transform: scale(1.04);
+            transition: transform 0.5s ease-out;
+        }
