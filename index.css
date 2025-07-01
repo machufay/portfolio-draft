@@ -135,17 +135,6 @@ body {
     top:30vw;
 }
 
-.green-box {
-    display: none;
-    z-index:0;
-    position: absolute;
-    top: 30vh;
-    height: 100vh;
-    width: 100vw;
-    background-color: #A4B465;
-
-}
-
 .half-page {
     width: 45vw;
     height: 40vw;
@@ -183,12 +172,57 @@ body {
         font-size: 1.9vw;
         color:#ffffff;
         text-shadow:
+        -1.2px 1.2px #1a2c27, 
         -1.2px -1.2px #1a2c27, 
         1.2px -1.2px #1a2c27, 
         1.2px 1.2px #1a2c27;
     }
+    
+    /* landing page contact info */
+    .contact-flex {
+        display:flex;
+        position: relative;
+        z-index: 2;
+        top:5vw;
+    }
+    .contact-flex a{
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50%;
+        margin: 1vw 2vw 1vw 2vw;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: -0.2vw 0.2vw #1a2c27;
+    }
+        .contact-flex a:hover{
+            transform: scale(1.08);
+            transition: transform 0.3s ease-out;
+        }
 
-/*MINI (dark green) SLIDER CODE*/
+    .contact-flex img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .contact {
+        position: relative;
+        left: 3vw;
+        top: 6vw;
+    }
+    .contact h4 {
+        margin-bottom: 1vw;
+        color:white;
+        font-size: 1.4vw;
+        font-weight: 600;
+        text-shadow:
+        -0.05vw 0.05vw #495846, 
+        -0.05vw -0.05vw #495846, 
+        0.05vw -0.05vw #495846, 
+        0.05vw 0.05vw #495846;
+    }
+
+
+    /*MINI (dark green) SLIDER CODE*/
     .mini-slider {
         position: absolute;
         width: 8.1vw;
