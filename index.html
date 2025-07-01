@@ -11,7 +11,14 @@
 
 <body>
 
-
+<a class="home-slider" href="#landing" style="--homequantity: 5">
+                <div class="home-item" style="--homeposition: 0">HOME</div>
+                <div class="home-item" style="--homeposition: 1">HOME</div>
+                <div class="home-item" style="--homeposition: 2">HOME</div>
+                <div class="home-item" style="--homeposition: 3">HOME</div>
+                <div class="home-item" style="--homeposition: 4">HOME</div>
+            </div>
+</a>
 
     <!-- LANDING PAGE -->
     <div class="landing-page" id="landing">
@@ -35,7 +42,7 @@
                 <a href="#gallery" class="item" id="item4" style="--position: 3">ART GALLERY</a>
                 <a href="#education" class="item" id="item5" style="--position: 4">EDUCATION</a>
                 <a href="#about" class="item" id="item6" style="--position: 5">ABOUT THIS PORTFOLIO<br>>> <<</a>
-                <a href="#" class="item" id="item7" style="--position: 6">CONTACT<br>ME</a>
+                <a href="#contact-me" class="item" id="item7" style="--position: 6">CONTACT<br>ME</a>
                 <a href="#projects" class="item" id="item8" style="--position: 7">PROJECTS</a>
             </div>
             <!--MINI SLIDER ICONS-->
@@ -192,6 +199,7 @@
             <h2>ART GALLERY</h2>
             <h3>Showcasing the best of my artworks, including origami models, paintings, and pen sketches.</h3>
         </div>
+        <button class="pill gallery-toggle">Toggle perspective</button>
     </div>
 
 
@@ -268,7 +276,7 @@
 
 
     <!-- CONTACT ME -->
-    <div class="contact-me">
+    <div class="contact-me" id="contact-me">
         <h1>CONTACT ME</h1>
         <div class="contact-me-shape"></div>
         <!-- email, phone #, github, linkedin, instagram -->
@@ -279,6 +287,7 @@
             <input type="text" placeholder="Ex: kodiluvsfood@gmail.com" class="your-email">
             <h3>MESSAGE:</h3>
             <input type="text" placeholder="Ex: Milk is my favorite drink" class="your-message">
+            <button class="pill">Send</button>
         </div>
     </div>
 

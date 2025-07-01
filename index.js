@@ -131,8 +131,6 @@ const item8 = document.getElementById("item8");
 
 
 
-
-
 //HOBBIES HEXAGON IMAGE APPEAR ON HOVER
 let hexagonRunning = document.querySelector(".left");
 let hexagonArt = document.querySelector(".middle");
@@ -184,3 +182,46 @@ hexagonMath.addEventListener("mouseout", function(){
    hexagonTop.style.display = "none";
    mathImage.style.display = "none";
 });
+
+
+
+
+//GALLERY SLIDER TOGGLE PERSPECTIVE
+let toggleButton = document.querySelector(".gallery-toggle");
+let gallerySlider = document.querySelector(".gallery-slider");
+   
+//ANIMATION PARAMETERS
+   var farRotate = [
+      { transform: 'perspective(70vw) rotateX(0deg) rotateY(0deg)' },
+      { transform: 'perspective(70vw) rotateX(0deg) rotateY(360deg)' }
+      ];
+   var nearRotate = [
+      { transform: 'perspective(20vw) rotateX(0deg) rotateY(0deg)' },
+      { transform: 'perspective(20vw) rotateX(0deg) rotateY(360deg)' }
+      ];
+   var timing = {
+      duration: 20000, // mseconds
+      iterations: Infinity, // Repeat
+      easing: 'linear' // rate
+      };
+
+
+//DEFAULT FAR ROTATE
+gallerySlider.animate(farRotate, timing);
+
+
+// TOGGLE BUTTON CODING
+var toggle = "far";
+ toggleButton.addEventListener("click", function(){
+      if (toggle ==="far"){
+         gallerySlider.animate(nearRotate, timing);
+         toggle = "near";
+      } else if (toggle ==="near"){
+         gallerySlider.animate(farRotate, timing);
+         toggle = "far";
+      };
+ });
+      
+
+
+//HOME BUTTON
