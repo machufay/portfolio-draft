@@ -2,8 +2,8 @@
 <html>
 
 <header>
-    <link rel="stylesheet" href="newfolio.css">
-    <script defer src="portfolio.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
     <title>Matthew's Portfolio</title>
 </header>
 
@@ -165,7 +165,7 @@
         </div>
             <div class="hexagon-top">
                 <img class="hobbies-image hobbies-running"src="Portrait_Placeholder.png">
-                <img class="hobbies-image hobbies-art" src="Portrait_Placeholder.png">
+                <img class="hobbies-image hobbies-art" src="portrait.png">
                 <img class="hobbies-image hobbies-math" src="Portrait_Placeholder.png">
             </div>
     </div>
@@ -198,8 +198,48 @@
     <div class="education" id="education">
         <h1>EDUCATION</h1>
         <div class="education-flex">
-            <div class="signature"></div>
-            
+            <div class="signature">
+                <br><br><br><br><br><br>
+                <!-- SIGNATURE SCHOOL TITLE -->
+                <a href="https://signature.edu/"><h2>SIGNATURE SCHOOL</h2></a>
+                <ul>
+                    <div class="edu-inline">
+                        <h3>GRADE: &nbsp;</h3>
+                        <h4>JUNIOR year</h4>
+                    </div>
+                    <div class="edu-inline">
+                        <h3>RANKING:</h3>
+                        <!-- Links "#2 NATIONWIDE" to the US NEWS ranking website-->
+                        <a href="https://www.usnews.com/education/best-high-schools/indiana/districts/signature-school-inc/signature-school-7098">
+                        <h2>&nbsp;#2&nbsp; NATIONWIDE</h2></a>
+                        <h3>(US NEWS)</h3>
+                    </div>
+                    <div class="edu-inline">
+                        <h3>GPA: &nbsp;&nbsp; 4.400</h3>
+                        <h4>(Unweighted: 4.00)</h4>
+                    </div>
+                    <div class="edu-inline">
+                        <h3>DUAL CREDIT:</h3>
+                        <h4>AP + IB Courses</h4>
+                    </div>
+                </ul>
+                <br>
+                <br>
+                <!-- NEXTECH CATAPULT TITLE -->
+                <a href="https://nextech.org/students/catapult/"><h2>NEXTECH CATAPULT</h2></a>
+                <ul>
+                    <h4>CATAPULT is a computer science internship in EVANSVILLE, INDIANA hosted by Nextech under the company SALESFORCE.
+                        Here, I learned web design skills (HTML, CSS, JS) that made this portfolio possible!
+                    </h4>
+                </ul>
+            </div>
+            <!-- edu SLIDER -->
+            <div class="edu-slider" style="--eduquantity: 4"> <!--quantity and position are variables for CSS called custom properties-->
+                <div class="edu-item" id="edu-item1" style="--eduposition: 0"><img src="Portrait_Placeholder.png"></div>
+                <div class="edu-item" id="edu-item2" style="--eduposition: 1"><img src="Portrait_Placeholder.png"></div>
+                <div class="edu-item" id="edu-item3" style="--eduposition: 2"><img src="Portrait_Placeholder.png"></div>
+                <div class="edu-item" id="edu-item4" style="--eduposition: 3"><img src="Portrait_Placeholder.png"></div>
+            </div>
         </div>
     </div>
 
