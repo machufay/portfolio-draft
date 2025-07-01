@@ -496,7 +496,7 @@ body {
     /*project items (flexbox)*/
     .projects-flex{
         top: 5vw;
-        margin-left: 8vw;
+        margin-left: 14vw;
         display: flex;
         justify-content: left;
         position: relative;
@@ -537,9 +537,9 @@ body {
         }
 
         .project-item p{
-            font-size: 1.1vw;
-            font-weight: 650;
-            padding: 0vw 2vw 0vw 2vw;
+            font-size: 1.4vw;
+            font-weight: 600;
+            padding: 1vw 1.5vw 0vw 1.5vw;
         }
         .project-item h2 {
             font-size: 1.9vw;
@@ -559,8 +559,8 @@ body {
         }
         .project-controls{
             position: relative;
-            right: 6vw;
-            top: 10vw;
+            right: 0vw;
+            top: 8vw;
         }
     .projects-flex2 {
         display: flex;
