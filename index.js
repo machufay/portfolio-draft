@@ -25,30 +25,6 @@ const item8 = document.getElementById("item8");
    var endAngle = startAngle + 45;
    var position = 0;
    
-   //INITIAL AUTO SCROLL
-   let auto = "on";
-   console.log(auto);
-   title.addEventListener("click", function () {
-      auto = "off";
-      console.log(auto);
-   });
-
-   if (auto === "on"){
-      slider.animate(autoLeft, autoOptions);
-      
-      var autoLeft = [
-      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(-45deg)' },
-      { transform: 'perspective(80vw) rotateX(-10deg) rotateY(0deg)' }
-      ];
-
-      var autoOptions = {
-      duration: 700, // mseconds
-      iterations: 1, // Repeat
-      easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
-      };
-
-   };
-
    //if left button pressed
    sliderLeft.addEventListener("click", function () {
       
