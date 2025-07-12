@@ -1,3 +1,13 @@
+/* It says gullible at the very bottom */
+
+
+
+
+
+
+
+
+
 *{
     margin: 0px; /*gets rid of the annoying background border*/
     scroll-behavior: smooth;
@@ -82,7 +92,7 @@ a{
     100% {
         transform:scale(0.98);}
 }
-@keyframes parallax{
+@keyframes parallax{ /* this one doesn't acutally do anything but I don't want to delete it*/
     0% {
         transform: translateX(0vw);
     }
@@ -1103,6 +1113,7 @@ body {
                 height: 100%;
                 object-fit: cover;
             }
+            /* Animation for the weird picture cube in the education section */
             @keyframes edu {
                 0% {
                     transform: perspective(70vw) rotateX(-0deg) rotateY(10deg);} 
@@ -1279,3 +1290,13 @@ body {
         clip-path: polygon(59% 0, 90% 10%, 100% 44%, 75% 69%, 26% 78%, 0 52%, 14% 14%);
         animation: fluctuate 10s ease-in-out infinite;
     }
+
+
+
+
+
+
+
+
+
+    /* gullible */

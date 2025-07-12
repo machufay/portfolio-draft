@@ -201,3 +201,4 @@ var toggle = "far";
 
 
 //HOME BUTTON
+//screw it I'm doing this in html
