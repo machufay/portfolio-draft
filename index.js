@@ -20,12 +20,10 @@ const item8 = document.getElementById("item8");
 
 //ROTATING SLIDER CODE!!!
    let itemAngle = [0, 45, 90, 135, 180, 225, 270, 315]; //array stores item angles
-
-   var startAngle = 90;
-   var endAngle = startAngle + 45;
-   var position = 0;
+   console.log("These arrays store the current angle orientation of each 8 rectangles that make up the interactive carousel on the landing page. It is used to refresh the orientation of the carousel after you click the buttons to rotate it: ");
+   console.log(itemAngle);
    
-   //if left button pressed
+   //IF LEFT BUTTON PRESSED
    sliderLeft.addEventListener("click", function () {
       
       slider.animate(transformationsLeft, timingOptionsLeft); //basically keyframes
@@ -62,14 +60,14 @@ const item8 = document.getElementById("item8");
       easing: 'cubic-bezier(.28,.19,.37,1.32)' // rate
    };
 
-   //if right button pressed
+   //IF RIGHT BUTTON PRESSED
    sliderRight.addEventListener("click", function () {
       
       slider.animate(transformationsRight, timingOptionsRight); //basically keyframes
          
       itemAngle.forEach(function(angle, index, arr){
-         if (angle >= 360){ 
-            angle -=360; //if angle exceeds 360, subtract 360
+         if (angle <= -360){
+            angle += 360; //if angle is less than -360, add 360
          }
          arr[index] = angle - 45; //subtract 45deg from each array item
       });
